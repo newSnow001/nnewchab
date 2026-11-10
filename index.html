@@ -1,54 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#081b18">
-
-<title>Mohit Agrawal | Research & Market Education</title>
-<meta name="description" content="Join Mohit Agrawal's research community for market research, equity insights and educational content.">
-
-<!-- META PIXEL -->
-<script>
-const META_PIXEL_ID = "YOUR_PIXEL_ID";
-
-if (META_PIXEL_ID !== "YOUR_PIXEL_ID" && META_PIXEL_ID.trim() !== "") {
-  !function(f,b,e,v,n,t,s) {
-    if(f.fbq)return;
-    n=f.fbq=function() {
-      n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-    };
-    if(!f._fbq)f._fbq=n;
-    n.push=n;
-    n.loaded=!0;
-    n.version='2.0';
-    n.queue=[];
-    t=b.createElement(e);
-    t.async=!0;
-    t.src=v;
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)
-  }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-  fbq('init', META_PIXEL_ID);
-  fbq('track', 'PageView');
-}
-</script>
+<title>HAJI SALMAN MEMON</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
-
-:root {
-  --bg: #081b18;
-  --card: #102a25;
-  --green: #b9ed78;
-  --green-dark: #8acb55;
-  --white: #f5f8f3;
-  --muted: #a8b8af;
-  --border: rgba(255,255,255,.09);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -56,573 +13,214 @@ if (META_PIXEL_ID !== "YOUR_PIXEL_ID" && META_PIXEL_ID.trim() !== "") {
 }
 
 body {
-  background:
-    radial-gradient(ellipse at 50% 0%, rgba(91,151,103,.18), transparent 43%),
-    var(--bg);
-  color: var(--white);
-  font-family: 'DM Sans', sans-serif;
   min-height: 100vh;
-  padding: 24px 15px 35px;
-}
-
-.container {
-  width: 100%;
-  max-width: 730px;
-  margin: auto;
-}
-
-.top-label {
-  text-align: center;
-  margin-bottom: 22px;
-}
-
-.top-label span {
-  display: inline-flex;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background:
+    radial-gradient(ellipse at 10% 35%, #102d30, transparent 35%),
+    radial-gradient(ellipse at 90% 75%, #122c35, transparent 35%),
+    #050607;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 9px;
-  border: 1px solid rgba(185,237,120,.25);
-  background: rgba(185,237,120,.07);
-  color: var(--green);
-  padding: 9px 16px;
-  border-radius: 50px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1px;
 }
 
-.dot {
-  height: 7px;
-  width: 7px;
-  background: var(--green);
-  border-radius: 50%;
-  box-shadow: 0 0 10px var(--green);
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
+.page {
+  width: 100%;
+  max-width: 410px;
+  padding: 30px 20px 24px;
   text-align: center;
-  padding: 38px 25px 31px;
-  border: 1px solid var(--border);
-  border-radius: 27px;
-  background: linear-gradient(145deg,#17362e,#0c211d 65%,#102a25);
-  box-shadow: 0 22px 70px rgba(0,0,0,.25);
-}
-
-.hero:before {
-  content: "";
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  top: -145px;
-  right: -100px;
-  border-radius: 50%;
-  background: rgba(185,237,120,.12);
-  filter: blur(35px);
+  border: 1px solid #282828;
+  border-radius: 28px;
+  background: rgba(0,0,0,.92);
+  box-shadow: 0 0 25px #000;
 }
 
 .profile {
-  position: relative;
-  width: 112px;
-  height: 112px;
-  margin: 0 auto 20px;
+  width: 145px;
+  height: 145px;
+  margin: 0 auto 22px;
   padding: 4px;
-  border: 3px solid var(--green);
+  border: 3px solid #ffdc52;
   border-radius: 50%;
-  background: rgba(185,237,120,.12);
-  box-shadow: 0 0 28px rgba(185,237,120,.16);
+  box-shadow: 0 0 12px #ffdc52, 0 0 28px #9e7e22;
+  overflow: hidden;
 }
 
 .profile img {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.name {
-  font-size: clamp(24px,5vw,33px);
+h1 {
+  color: #ffdb55;
+  font-size: 29px;
   font-weight: 800;
-  letter-spacing: -.8px;
-  line-height: 1.3;
-}
-
-.role {
-  margin-top: 10px;
-  color: var(--green);
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.intro {
-  max-width: 520px;
-  margin: 16px auto 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.headline {
-  margin-top: 30px;
-  font-size: clamp(28px,6vw,39px);
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -1.2px;
-}
-
-.headline span {
-  display: block;
-  color: var(--green);
-  margin-top: 6px;
-}
-
-.hero-text {
-  max-width: 500px;
-  margin: 15px auto 24px;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.join-btn {
-  width: 100%;
-  max-width: 420px;
-  min-height: 59px;
-  padding: 14px 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  border: none;
-  border-radius: 14px;
-  background: linear-gradient(100deg,#c8f486,#8fd45c);
-  color: #112216;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 800;
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgba(157,226,91,.17);
-  transition: .25s ease;
-}
-
-.join-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 13px 35px rgba(157,226,91,.27);
-}
-
-.telegram-icon {
-  font-size: 21px;
-}
-
-.button-note {
-  margin-top: 12px;
-  color: #a7b8ad;
-  font-size: 11px;
-}
-
-.timer {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.timer strong {
-  color: var(--green);
-  font-size: 16px;
-}
-
-.section {
-  margin-top: 23px;
-  padding: 26px 23px;
-  border: 1px solid var(--border);
-  border-radius: 23px;
-  background: rgba(16,42,37,.85);
-}
-
-.section-title {
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: -.4px;
-  margin-bottom: 9px;
-}
-
-.section-subtitle {
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.feature {
-  padding: 18px 15px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: rgba(255,255,255,.035);
-}
-
-.feature-icon {
-  font-size: 25px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 14px #8e7629;
   margin-bottom: 12px;
 }
 
-.feature h3 {
+.subtitle {
+  color: #ffe59a;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.telegram-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px 8px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  background: linear-gradient(110deg,#078dd2,#06aaff,#008fe0);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 750;
+  box-shadow: 0 0 12px #00aaff, 0 0 22px #007bbd;
+  overflow: hidden;
+}
+
+.telegram-btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -80%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    110deg,
+    transparent,
+    rgba(255,255,255,.9),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shine 2.3s infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% { left: -80%; }
+  65%,100% { left: 140%; }
+}
+
+.trust {
+  border: 1px solid #e5c34e;
+  border-radius: 11px;
+  padding: 11px 6px;
+  margin-bottom: 24px;
+  color: #ffe18a;
   font-size: 14px;
-  margin-bottom: 8px;
+  box-shadow: 0 0 12px #584719;
 }
 
-.feature p {
-  font-size: 12px;
-  line-height: 1.8;
-  color: var(--muted);
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 24px;
 }
 
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.trust-item {
-  padding: 17px 8px;
-  text-align: center;
-  border-radius: 14px;
-  border: 1px solid rgba(185,237,120,.13);
-  background: rgba(185,237,120,.05);
-}
-
-.trust-icon {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.trust-item p {
-  font-size: 11px;
-  line-height: 1.6;
-  color: #d3dfd6;
+.feature {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #f2f2f2;
 }
 
 .disclaimer {
-  margin-top: 22px;
-  padding: 20px;
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.025);
-}
-
-.disclaimer h3 {
-  color: var(--green);
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.disclaimer p {
+  color: #bcb2c0;
   font-size: 11px;
-  line-height: 1.9;
-  color: #a0b0a6;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
-.footer {
-  padding: 25px 10px 5px;
-  text-align: center;
-  color: #91a49a;
-  font-size: 11px;
-  line-height: 2;
+.ad-footer {
+  padding: 12px 8px;
+  border-radius: 15px;
+  background: linear-gradient(110deg,#6239ef,#a82be9,#e63eaa);
+  border: 1px solid #cf65ed;
+  box-shadow: 0 0 14px #8737bd;
+  color: white;
+  font-size: 12px;
+  line-height: 1.7;
 }
 
-.footer a {
-  color: var(--green);
-  font-weight: 700;
+.ad-footer a {
+  color: #b9edff;
+  font-weight: 800;
   text-decoration: none;
+  border-bottom: 1px solid #b9edff;
 }
 
-@media(max-width:480px) {
-  body {
-    padding: 15px 11px 25px;
-  }
-
-  .hero {
-    padding: 30px 17px 25px;
-    border-radius: 22px;
-  }
-
-  .section {
-    padding: 22px 16px;
-  }
-
-  .features {
-    gap: 9px;
-  }
-
-  .feature {
-    padding: 14px 11px;
-  }
-
-  .trust-grid {
-    gap: 7px;
-  }
-}
-
-@media(max-width:350px) {
-  .features {
-    grid-template-columns: 1fr;
-  }
+@media(max-width:360px) {
+  .page { padding: 25px 14px 20px; }
+  .profile { width: 130px; height: 130px; }
+  h1 { font-size: 26px; }
+  .subtitle { font-size: 15px; }
+  .telegram-btn { font-size: 14px; }
+  .feature { font-size: 13px; }
 }
 </style>
 </head>
 
 <body>
+<main class="page">
 
-<div class="container">
-
-  <div class="top-label">
-    <span><i class="dot"></i> RESEARCH & MARKET EDUCATION</span>
+  <div class="profile">
+    <img src="logo.jpg" alt="Haji Salman memon"
+      onerror="this.style.display='none'">
   </div>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <h1>HAJI SALMAN MEMON</h1>
 
-    <div class="profile">
-      <img src="logo.png" alt="Mohit Agrawal"
-      onerror="this.src='https://placehold.co/200x200/17372e/b9ed78?text=MA'">
-    </div>
+  <p class="subtitle">
+    📊 Stock Market Learning<br>
+    Community
+  </p>
 
-    <h1 class="name">MOHIT AGRAWAL</h1>
+  <a class="telegram-btn"
+     href="https://t.me/+UIIBfUo5ArtkYjE1"
+     target="_blank"
+     rel="noopener noreferrer">
+    🚀 Join Our Telegram Group
+  </a>
 
-    <p class="role">Research & Market Education</p>
+  <div class="trust">
+    🔥 India's Trusted Learning Group
+  </div>
 
-    <p class="intro">
-      Explore market research, equity insights and educational
-      resources designed to help you understand the financial markets.
-    </p>
+  <div class="features">
+    <p class="feature">🎯 Live Educational Sessions</p>
+    <p class="feature">📘 Learn Stocks · Indices · Concepts</p>
+    <p class="feature">🚀 Join Free Community Today</p>
+  </div>
 
-    <h2 class="headline">
-      Learn. Research.
-      <span>Understand Markets.</span>
-    </h2>
+  <p class="disclaimer">
+    Educational purpose only. No investment advice.
+  </p>
 
-    <p class="hero-text">
-      Join the research community to access market observations,
-      educational insights and research-related updates.
-    </p>
-
-    <a href="#" class="join-btn" id="telegramBtn">
-      <span class="telegram-icon">➤</span>
-      JOIN RESEARCH COMMUNITY — FREE
+  <footer class="ad-footer">
+    🔥 Ads Managed By
+    <a href="https://t.me/+nTRMAouerik1ZGY1"
+       target="_blank"
+       rel="noopener noreferrer">
+      ADSBIG AGENCY
     </a>
-
-    <p class="button-note">
-      Join our Telegram community for research and educational updates.
-    </p>
-
-    <div class="timer">
-      <span>Automatic redirect in</span>
-      <strong id="countdown">30</strong>
-      <span>seconds</span>
-    </div>
-
-  </section>
-
-  <!-- WHAT YOU GET -->
-  <section class="section">
-
-    <h2 class="section-title">What You Get Inside</h2>
-
-    <p class="section-subtitle">
-      Explore educational resources and research-related information
-      to develop a better understanding of financial markets.
-    </p>
-
-    <div class="features">
-
-      <div class="feature">
-        <div class="feature-icon">📊</div>
-        <h3>Research & Market Analysis</h3>
-        <p>
-          Research coverage and market observations
-          on selected companies and sectors.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">📈</div>
-        <h3>Understanding Options Markets</h3>
-        <p>
-          Learn options market concepts and understand
-          how different instruments work.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">📚</div>
-        <h3>Educational Content</h3>
-        <p>
-          Explore market explainers, learning resources
-          and educational discussions.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">💡</div>
-        <h3>Market Insights</h3>
-        <p>
-          Follow market developments, sector observations
-          and research-related updates.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- COMMUNITY -->
-  <section class="section">
-
-    <h2 class="section-title">Explore The Research Community</h2>
-
-    <p class="section-subtitle">
-      A place to explore market research and educational
-      information in one community.
-    </p>
-
-    <div class="trust-grid">
-
-      <div class="trust-item">
-        <div class="trust-icon">📖</div>
-        <p>Market<br>Education</p>
-      </div>
-
-      <div class="trust-item">
-        <div class="trust-icon">🔎</div>
-        <p>Research<br>Insights</p>
-      </div>
-
-      <div class="trust-item">
-        <div class="trust-icon">🌐</div>
-        <p>Online<br>Community</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- REGISTRATION DETAILS -->
-  <!-- Add actual registration details only after client verification -->
-  <section class="section">
-    <h2 class="section-title">Research Information</h2>
-    <p class="section-subtitle">
-      Please verify the research provider's identity,
-      registration status and applicable disclosures independently
-      before relying on any research service.
-    </p>
-  </section>
-
-  <!-- DISCLAIMER -->
-  <div class="disclaimer">
-
-    <h3>Important Risk Disclosure</h3>
-
-    <p>
-      Investments in securities are subject to market risks.
-      The content shared through this community is intended
-      for educational and informational purposes only and
-      should not be considered a guarantee of returns or
-      personalized investment advice. No profits or investment
-      outcomes are assured. Please conduct your own research
-      and consult an appropriately qualified professional
-      before making investment decisions.
-    </p>
-
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-
-    <p>© <span id="year"></span> MOHIT AGRAWAL</p>
-    <p>All Rights Reserved.</p>
-
-    <p>
-      Website Managed by
-      <a href="https://YOUR-AGENCY-LINK.com"
-         target="_blank" rel="noopener noreferrer">
-        Snow Ads Agency
-      </a>
-    </p>
-
+    · Instant Growth 🚀
   </footer>
 
-</div>
-
-<script>
-
-/* =================================
-   EDIT THESE SETTINGS
-================================= */
-
-const TELEGRAM_LINK = "https://t.me/YOUR_CLIENT_TELEGRAM";
-const AGENCY_LINK = "https://YOUR-AGENCY-LINK.com";
-const REDIRECT_SECONDS = 30;
-
-/* =================================
-   TELEGRAM BUTTON
-================================= */
-
-const telegramBtn = document.getElementById("telegramBtn");
-
-telegramBtn.href = TELEGRAM_LINK;
-
-telegramBtn.addEventListener("click", function() {
-  if (typeof fbq === "function") {
-    fbq("trackCustom", "TelegramJoinClick");
-  }
-});
-
-/* =================================
-   AGENCY LINK
-================================= */
-
-document.querySelector(".footer a").href = AGENCY_LINK;
-
-/* =================================
-   COUNTDOWN REDIRECT
-================================= */
-
-let remaining = REDIRECT_SECONDS;
-const countdown = document.getElementById("countdown");
-
-const timer = setInterval(function() {
-
-  remaining--;
-  countdown.textContent = remaining;
-
-  if (remaining <= 0) {
-    clearInterval(timer);
-
-    if (TELEGRAM_LINK !== "https://t.me/YOUR_CLIENT_TELEGRAM") {
-      window.location.href = TELEGRAM_LINK;
-    }
-  }
-
-}, 1000);
-
-/* =================================
-   FOOTER YEAR
-================================= */
-
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-
-</script>
-
+</main>
 </body>
 </html>
